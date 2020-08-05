@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  src: url(../fonts/AvenirNext-Regular-08.ttf);
+  font-family: AvenirNext;
+}
+
+@font-face {
+  src: url(../fonts/AvenirNext-DemiBold-03.ttf);
+  font-family: AvenirNextDemiBold;
+}
+
+@font-face {
+  src: url(../fonts/AvenirNext-Bold-01.ttf);
+  font-family: AvenirNextBold;
+}
+
+body{
+  background: grey;
+}
+nav{
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 100px;
+  padding-left: 100px;
+  font-family: AvenirNextDemiBold;
+}
+nav ul{
+  float: right;
+  margin-right: 85px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: white;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  line-height: 100px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: grey;
+  border-radius: 5px;
+  box-shadow:  0 0 5px black,
+               1 0 10px #8e8e8e;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid black;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 100px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.tolubody {
+  margin: 0;
+  text-align: center;
+}
+
+.midsec1 p {
+  color: white;
+  font-size: 5rem;
+  font-family: AvenirNextDemiBold;
+  background: #252525;
+  padding: 13% 0 2%;
+}
+
+.coldiff {
+  color: #FFA537;
+  font-family: AvenirNextDemiBold;
+}
+
+.midsec2 p {
+  padding: 0 30% 8%;
+  background: #252525;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.prefooter p {
+  padding: 8% 35%;
+  font-size: 2rem;
+  font-family: AvenirNextBold;
+  background: white;
+}
+
+.prefooter .author {
+  font-size: 1rem;
+}
+
+.footer p {
+  color: white;
+  background: #252525;
+  padding: 5% 0 3%;
+  font-size: 1.5rem;
+  font-family: AvenirNextDemiBold;
+}
+
+.ctabutton {
+  background: #252525;
+  padding: 0% 0 5%;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 1px;
+  font: normal normal bold 1rem AvenirNext;
+  color: white;
+  text-decoration: none;
+  font-family: AvenirNext;
+}
+
+.button:hover {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 30px;
+  border: 1px solid #b3b3b3;
+  border-radius: 0px;
+  background: #ffffff;
+  font: normal normal bold arial;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: AvenirNext;
+}
+
+.footericon {
+  background: black;
+  padding: 5% 0 5% 3%;
+}
+
+#toluicons:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+#toluicons {
+  font-size: 20px;
+  color: white;
+  padding-right: 3%;
+}
+
+.footercopyright p {
+  background-color: black;
+  color: white;
+  font-size: 0.5rem;
+}
+
+
+
+@media all and (max-width: 968px) {
+
+  .midsec1 p {
+    color: white;
+    font-size: 2.5rem;
+    padding: 50% 3% 5%;
+  }
+
+  .midsec2 p {
+    padding: 0 13% 25%;
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  .prefooter p {
+    padding: 20% 20% 20%;
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  .prefooter .author {
+    font-size: 0.4rem;
+    font-family: AvenirNext;
+  }
+
+  .footer p {
+    padding: 15% 0 8%;
+    font-size: 1rem;
+  }
+
+  .ctabutton {
+    background: #252525;
+    padding: 0% 0 15%;
+  }
+
+  .button {
+    font: normal normal bold 0.6rem AvenirNext;
+    padding: 8px 20px;
+  }
+
+  .button:hover {
+    padding: 8px 20px;
+  }
+
+  .footericon {
+    padding: 10% 0 10% 3%;
+  }
+
+  #toluicons {
+    font-size: 15px;
+  }
+
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: grey;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}
